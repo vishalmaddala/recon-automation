@@ -21,7 +21,7 @@ def create_recon_folder_structure(domain_name):
         "httpx_alive": os.path.join(recon_folder, "alive_subdomains_httpx.txt"),
         "subzy_results": os.path.join(recon_folder, "subzy_results.txt"),
         "alive_domains_with_status_codes": os.path.join(recon_folder, "alive_domains_with_status_codes.txt"),
-        "all_urls_combined": os.path.join(recon_folder, "all_urls_combined.txt")
+        "katana_results": os.path.join(recon_folder, "katana_results.txt")
     }
 
     return files
@@ -113,7 +113,7 @@ def perform_recon(domain_name):
         print("[+] Crawling endpoints using Katana...")
         
         katana_input_file = files["httpx_alive"]
-        katana_output_file = files["all_urls_combined"]
+        katana_output_file = files["katana_results"]
         
         katana_command_1 = f"sudo katana -u {katana_input_file} -jc >> {katana_output_file}"
         katana_command_2 = f"sudo katana -u {katana_input_file} -d 5 -ef woff,css,png,svg,jpg,woff2,jpeg,gif >> {katana_output_file}"
