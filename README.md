@@ -41,10 +41,16 @@ Run the script by providing a target domain as input:
 
 ## Output Structure:
 <target_domain>/ 
+
 └── recon/ 
-├── mainsubdomains.txt                # Combined list of all discovered subdomains (unique) 
-├── alive_subdomains_httpx.txt        # Alive subdomains confirmed by httpx (cleaned) 
-├── subzy_results.txt                 # Results from Subzy checks 
-├── alive_domains_with_status_codes.txt # Alive domains with HTTP status codes 
-└── katana_output.txt                 # Combined Katana endpoint discovery results (unique)
-   
+
+├── mainsubdomains.txt                       # Combined list of all discovered subdomains (unique) 
+
+├── alive_subdomains_httpx.txt               # Alive subdomains confirmed by httpx (cleaned) 
+
+├── subzy_results.txt                        # Results from Subzy checks 
+
+├── alive_domains_with_status_codes.txt        # Alive domains with HTTP status codes 
+
+└── katana_output.txt                        # Combined Katana endpoint discovery results (unique)
+     
