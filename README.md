@@ -39,6 +39,15 @@ Run the script by providing a target domain as input:
 2. The script performs subdomain enumeration, HTTP probing, takeover checks, and endpoint discovery.
 3. Results are saved in an organized folder structure.
 
+# Run the script
+python3 recon.py
+
+# Example Input: simplify.com
+
+Output:
+
+<img width="831" alt="image" src="https://github.com/user-attachments/assets/4ecfc060-63eb-4bd1-a7e0-e2e4e8c39c10" />
+
 ## Output Structure:
 <target_domain>/ 
 
