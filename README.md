@@ -23,8 +23,7 @@ Ensure the following tools are installed on your system:
    - [httpx](https://github.com/projectdiscovery/httpx)
    - [Subzy](https://github.com/LukaSikic/subzy)
    - [Katana](https://github.com/projectdiscovery/katana)
-3. Install Python dependencies:
-pip install -r requirements.txt
+
 
 ## Installation
 1. Clone this repository:
