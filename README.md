@@ -24,3 +24,28 @@ Ensure the following tools are installed on your system:
    - [Subzy](https://github.com/LukaSikic/subzy)
    - [Katana](https://github.com/projectdiscovery/katana)
 3. Install Python dependencies:
+pip install -r requirements.txt
+
+## Installation
+1. Clone this repository:
+2. Install required tools (see Prerequisites).
+3. Run the script:
+
+## Usage
+Run the script by providing a target domain as input:
+
+
+### Example Workflow:
+1. Enter the target domain when prompted (e.g., `example.com`).
+2. The script performs subdomain enumeration, HTTP probing, takeover checks, and endpoint discovery.
+3. Results are saved in an organized folder structure.
+
+## Output Structure:
+<target_domain>/ 
+└── recon/ 
+├── mainsubdomains.txt                # Combined list of all discovered subdomains (unique) 
+├── alive_subdomains_httpx.txt        # Alive subdomains confirmed by httpx (cleaned) 
+├── subzy_results.txt                 # Results from Subzy checks 
+├── alive_domains_with_status_codes.txt # Alive domains with HTTP status codes 
+└── katana_output.txt                 # Combined Katana endpoint discovery results (unique)
+   
